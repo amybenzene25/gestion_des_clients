@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Systeme de gestion des clients</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+    
+           <h1>Cestion Hotelière</h1>
+           
+                <table>
+                    <tr>
+                        <td>
+                            <form onsubmit="event.preventDefault(); onFormSubmit()">
+            
+                                <div>
+                                    <label for="code">Code* <label class="validation-error hide"  id="codeValidationError" >This Field is required</label> </label>
+                                    <input type="text" name="code" id="code">
+                                </div>
+                                <div>
+                                    <label for="fullname">Nom Complet* <label class="validation-error hide"  id="fullNameValidationError" >This Field is required</label> </label>
+                                    <input type="text" name="fullname" id="fullname">
+                                </div>                  
+                                <div>
+                                    <label for="gender">Genre</label>
+                                    <input type="text" name="gender" id="gender">
+                                </div>
+                                <div>
+                                    <label for="code">adresse</label>
+                                    <input type="text" name="address" id="address">
+                                </div>
+                                <div>
+                                    <label for="email">Email* <label class="validation-error hide"  id="emailValidationError" >This Field is required</label></label>
+                                    <input type="text" name="email" id="email">
+                                </div>
+                                <div>
+                                    <label for="school">Mot de passe</label>
+                                    <input type="text" name="school" id="school">
+                                </div>
+                                <div>
+                                    <input class="form-action-buttons submit" type="submit" value="Enregistrer">
+                                </div>
+                                
+                            </form>
+                        </td>
+                        <td>
+                            <table class="list" id="emplist">
+                                <thead>
+                                    <tr>
+                                        <td class="thead"> Code</td>
+                                        <td class="thead">Nom Complet</td>
+                                        <td class="thead">Genre</td>
+                                        <td class="thead">Addresse</td>
+                                        <td class="thead">Email</td>
+                                        <td class="thead">Mot de passe</td>
+                                        <td class="thead">Actions</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+            
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+        
+        <script src="assets/js/script.js"></script>
+    </body>
+    </html>
+      
